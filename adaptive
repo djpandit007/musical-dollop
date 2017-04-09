@@ -1,0 +1,22 @@
+:- sorts
+topic.
+
+:- objects
+t1, t2, t3, t4, t5 :: topic.
+
+:- variables
+T, T1 :: topic.
+
+:- constants
+knows(topic) :: inertialFluent;
+study(topic) :: exogenousAction.
+
+study(T) causes knows(T).
+
+nonexecutable study(T) if knows(T).
+nonexecutable study(T) & study(T1) & T \= T1.
+
+:- query
+maxstep :: 1..10;
+0: knows(t1) & ~knows(t2) & ~knows(t3) & ~knows(t4) & ~knows(t5);
+maxstep: knows(t1) & knows(t2) & knows(t3) & knows(t4) & knows(t5).
