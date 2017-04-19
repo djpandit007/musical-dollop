@@ -8,11 +8,16 @@ t1, t2, t3, t4, t5 :: topic.
 T, T1 :: topic.
 
 :- constants
-knows(topic),
-learnAfter(topic, topic) :: inertialFluent;
+knows(topic) :: inertialFluent;
+learnAfter(topic, topic) :: simpleFluent;
 study(topic) :: exogenousAction.
 
 study(T) causes knows(T).
+
+default ~learnAfter(T, T1).
+
+%default ~knows(T).
+%caused knows(t1).
 
 nonexecutable study(T) if knows(T).
 nonexecutable study(T) & study(T1) & T \= T1.
@@ -20,6 +25,6 @@ nonexecutable study(T) if learnAfter(T, T1) & ~knows(T1).
 
 :- query
 maxstep :: 1..10;
-0: knows(t1) & ~knows(t2) & ~knows(t3) & ~knows(t4) & ~knows(t5) &
-  learnAfter(t3, t1) & learnAfter(t2, t3) & learnAfter(t4, t2) & learnAfter(t5, t4);
+0: knows(t1) & ~knows(t2) & ~knows(t3) & ~knows(t4) & ~knows(t5)
+ & learnAfter(t3, t1) & learnAfter(t2, t3) & learnAfter(t4, t2) & learnAfter(t5, t4);
 maxstep: knows(t1) & knows(t2) & knows(t3) & knows(t4) & knows(t5).
