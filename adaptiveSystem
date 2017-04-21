@@ -1,3 +1,11 @@
+:- begin_python.
+import random
+def a():
+        return 7
+def test(t):
+        i = random.randint(0,1)
+        return 1
+:- end_python.
 :- sorts
 topic.
 
@@ -8,23 +16,25 @@ t1, t2, t3, t4, t5 :: topic.
 T, T1 :: topic.
 
 :- constants
-knows(topic) :: inertialFluent;
-learnAfter(topic, topic) :: sdFluent;
+knows(topic),
+testStatus(topic),
+learnAfter(topic, topic) :: inertialFluent;
+takeTest(topic),
 study(topic) :: exogenousAction.
 
 study(T) causes knows(T).
-
-default ~learnAfter(T, T1).
-caused learnAfter(t3, t1).
-caused learnAfter(t2, t1).
-caused learnAfter(t4, t2).
-caused learnAfter(t5, t3).
-
+caused takeTest(T) if knows(T) & ~testStatus(T).
+takeTest(T) causes ~testStatus(T) if @test(T)=0.
+takeTest(T) causes testStatus(T )if @test(T)=1.
+caused ~knows(T) if knows(T) & ~testStatus(T).
+nonexecutable takeTest(T) if ~knows(T).
 nonexecutable study(T) if knows(T).
+nonexecutable study(T) & takeTest(T).
 nonexecutable study(T) & study(T1) & T \= T1.
 nonexecutable study(T) if learnAfter(T, T1) & ~knows(T1).
 
 :- query
-maxstep :: 1..10;
-0: knows(t1) & ~knows(t2) & ~knows(t3) & ~knows(t4) & ~knows(t5);
+maxstep :: 1..100;
+0: knows(t1) & ~knows(t2) & ~knows(t3) & ~knows(t4) & ~knows(t5) &
+  learnAfter(t3, t1) & learnAfter(t2, t3) & learnAfter(t4, t2) & learnAfter(t5, t4);
 maxstep: knows(t1) & knows(t2) & knows(t3) & knows(t4) & knows(t5).
