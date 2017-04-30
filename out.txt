@@ -1,0 +1,35 @@
+% Pragma: Running Query '0'.
+% Pragma: Minimum Step = '1', Maximum Step = '10'.
+% Pragma: Searching for 1 solutions.
+clingo version 4.5.4
+Solving...
+Solving...
+Solving...
+Solving...
+Solving...
+Solution: 1
+	
+
+	0:  knows(t1) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+
+	ACTIONS:  study(t2)
+
+	1:  knows(t1) knows(t2) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+
+	ACTIONS:  study(t3)
+
+	2:  knows(t1) knows(t2) knows(t3) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+
+	ACTIONS:  study(t5)
+
+	3:  knows(t1) knows(t2) knows(t3) knows(t5) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+
+	ACTIONS:  study(t4)
+
+	4:  knows(t1) knows(t2) knows(t3) knows(t4) knows(t5) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+
+SATISFIABLE
+Models       : 1+    
+Calls        : 5
+Time         : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.000s
