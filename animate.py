@@ -13,7 +13,14 @@ def plotGraph(red_edges):
                     't1': [0.09115616, 0.00502474]}
     Edges = [('t1', 't2'), ('t1', 't3'), ('t2', 't4'), ('t3', 't5')]
     G.add_edges_from(Edges)
-    
+
+    pos = nx.spring_layout(G, pos = initPosition, fixed = labels)
+    black_edges = [edge for edge in G.edges()]
+    nx.draw_networkx_nodes(G,pos, node_color='c')
+    nx.draw_networkx_labels(G,pos)
+    nx.draw_networkx_edges(G, pos, edgelist=black_edges,edge_color='r', arrows=True)
+    plt.show()
+
     currentList = []
     for edge in red_edges:
         currentList.append(edge)
@@ -24,7 +31,6 @@ def plotGraph(red_edges):
         nx.draw_networkx_edges(G, pos, edgelist=currentList, edge_color='b', arrows=True)
         nx.draw_networkx_edges(G, pos, edgelist=black_edges,edge_color='r', arrows=True)
         plt.show()
-       
-    
-plotGraph([('t1', 't2'), ('t1', 't3'), ('t3', 't5'), ('t2', 't4')])
 
+
+plotGraph([('t1', 't2'), ('t1', 't3'), ('t3', 't5'), ('t2', 't4')])
