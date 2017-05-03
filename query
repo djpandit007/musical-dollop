@@ -1,0 +1,4 @@
+:- query
+maxstep :: 1..10;
+0: knows(t1) & ~knows(T);
+maxstep: knows(T).

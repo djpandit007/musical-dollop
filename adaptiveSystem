@@ -2,7 +2,7 @@
 topic.
 
 :- objects
-t1, t2, t3, t4, t5 :: topic.
+t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23, t24, t25, t26, t27, t28, t29, t30, t31, t32, t33, t34, t35, t36, t37, t38, t39, t40, t41 :: topic.
 
 :- variables
 T, T1 :: topic.
@@ -15,16 +15,51 @@ study(topic) :: exogenousAction.
 study(T) causes knows(T).
 
 default ~learnAfter(T, T1).
-caused learnAfter(t3, t1).
-caused learnAfter(t2, t1).
-caused learnAfter(t4, t2).
-caused learnAfter(t5, t3).
 
 nonexecutable study(T) if knows(T).
 nonexecutable study(T) & study(T1) & T \= T1.
 nonexecutable study(T) if learnAfter(T, T1) & ~knows(T1).
 
-:- query
-maxstep :: 1..10;
-0: knows(t1) & ~knows(t2) & ~knows(t3) & ~knows(t4) & ~knows(t5);
-maxstep: knows(t1) & knows(t2) & knows(t3) & knows(t4) & knows(t5).
+
+caused learnAfter(t5,t4).
+caused learnAfter(t6,t4).
+caused learnAfter(t6,t5).
+caused learnAfter(t11,t1).
+caused learnAfter(t11,t2).
+caused learnAfter(t12,t9).
+caused learnAfter(t13,t11).
+caused learnAfter(t13,t12).
+caused learnAfter(t14,t4).
+caused learnAfter(t14,t5).
+caused learnAfter(t15,t11).
+caused learnAfter(t15,t13).
+caused learnAfter(t17,t17).
+caused learnAfter(t19,t1).
+caused learnAfter(t19,t11).
+caused learnAfter(t20,t18).
+caused learnAfter(t21,t19).
+caused learnAfter(t22,t18).
+caused learnAfter(t22,t19).
+caused learnAfter(t23,t19).
+caused learnAfter(t23,t21).
+caused learnAfter(t24,t22).
+caused learnAfter(t24,t23).
+caused learnAfter(t25,t24).
+caused learnAfter(t26,t20).
+caused learnAfter(t26,t23).
+caused learnAfter(t28,t18).
+caused learnAfter(t30,t9).
+caused learnAfter(t30,t28).
+caused learnAfter(t31,t24).
+caused learnAfter(t31,t29).
+caused learnAfter(t32,t14).
+caused learnAfter(t33,t12).
+caused learnAfter(t33,t30).
+caused learnAfter(t34,t16).
+caused learnAfter(t34,t17).
+caused learnAfter(t35,t1).
+caused learnAfter(t36,t35).
+caused learnAfter(t37,t37).
+caused learnAfter(t39,t11).
+caused learnAfter(t40,t39).
+caused learnAfter(t41,t40).

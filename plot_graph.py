@@ -2,14 +2,12 @@ import webbrowser
 
 
 import networkx as nx
-import numpy as np
 import matplotlib.pyplot as plt
-import plotly.plotly as py
 
 
 def plotGraoph(red_edges,red_edges_lbl):
     G = nx.DiGraph()
-    labels = {'t1','t2','t3','t4','t5'}
+    labels = ['t1','t2','t3','t4','t5']
     Edges = [('t1', 't2'), ('t1', 't3'), ('t4', 't2'), ('t5', 't3'),('t5','t6')]
     G.add_edges_from(Edges)
     

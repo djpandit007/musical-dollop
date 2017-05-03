@@ -10,26 +10,26 @@ Solving...
 Solution: 1
 	
 
-	0:  knows(t1) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+	0:  knows(t1) knows(t13) knows(t21) knows(t37) knows(t7) knows(t9) learnAfter(t11, t1) learnAfter(t11, t2) learnAfter(t12, t9) learnAfter(t13, t11) learnAfter(t13, t12) learnAfter(t14, t4) learnAfter(t14, t5) learnAfter(t15, t11) learnAfter(t15, t13) learnAfter(t17, t17) learnAfter(t19, t1) learnAfter(t19, t11) learnAfter(t20, t18) learnAfter(t21, t19) learnAfter(t22, t18) learnAfter(t22, t19) learnAfter(t23, t19) learnAfter(t23, t21) learnAfter(t24, t22) learnAfter(t24, t23) learnAfter(t25, t24) learnAfter(t26, t20) learnAfter(t26, t23) learnAfter(t28, t18) learnAfter(t30, t28) learnAfter(t30, t9) learnAfter(t31, t24) learnAfter(t31, t29) learnAfter(t32, t14) learnAfter(t33, t12) learnAfter(t33, t30) learnAfter(t34, t16) learnAfter(t34, t17) learnAfter(t35, t1) learnAfter(t36, t35) learnAfter(t37, t37) learnAfter(t39, t11) learnAfter(t40, t39) learnAfter(t41, t40) learnAfter(t5, t4) learnAfter(t6, t4) learnAfter(t6, t5)
 
 	ACTIONS:  study(t2)
 
-	1:  knows(t1) knows(t2) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+	1:  knows(t1) knows(t13) knows(t2) knows(t21) knows(t37) knows(t7) knows(t9) learnAfter(t11, t1) learnAfter(t11, t2) learnAfter(t12, t9) learnAfter(t13, t11) learnAfter(t13, t12) learnAfter(t14, t4) learnAfter(t14, t5) learnAfter(t15, t11) learnAfter(t15, t13) learnAfter(t17, t17) learnAfter(t19, t1) learnAfter(t19, t11) learnAfter(t20, t18) learnAfter(t21, t19) learnAfter(t22, t18) learnAfter(t22, t19) learnAfter(t23, t19) learnAfter(t23, t21) learnAfter(t24, t22) learnAfter(t24, t23) learnAfter(t25, t24) learnAfter(t26, t20) learnAfter(t26, t23) learnAfter(t28, t18) learnAfter(t30, t28) learnAfter(t30, t9) learnAfter(t31, t24) learnAfter(t31, t29) learnAfter(t32, t14) learnAfter(t33, t12) learnAfter(t33, t30) learnAfter(t34, t16) learnAfter(t34, t17) learnAfter(t35, t1) learnAfter(t36, t35) learnAfter(t37, t37) learnAfter(t39, t11) learnAfter(t40, t39) learnAfter(t41, t40) learnAfter(t5, t4) learnAfter(t6, t4) learnAfter(t6, t5)
 
 	ACTIONS:  study(t3)
 
-	2:  knows(t1) knows(t2) knows(t3) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
-
-	ACTIONS:  study(t5)
-
-	3:  knows(t1) knows(t2) knows(t3) knows(t5) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+	2:  knows(t1) knows(t13) knows(t2) knows(t21) knows(t3) knows(t37) knows(t7) knows(t9) learnAfter(t11, t1) learnAfter(t11, t2) learnAfter(t12, t9) learnAfter(t13, t11) learnAfter(t13, t12) learnAfter(t14, t4) learnAfter(t14, t5) learnAfter(t15, t11) learnAfter(t15, t13) learnAfter(t17, t17) learnAfter(t19, t1) learnAfter(t19, t11) learnAfter(t20, t18) learnAfter(t21, t19) learnAfter(t22, t18) learnAfter(t22, t19) learnAfter(t23, t19) learnAfter(t23, t21) learnAfter(t24, t22) learnAfter(t24, t23) learnAfter(t25, t24) learnAfter(t26, t20) learnAfter(t26, t23) learnAfter(t28, t18) learnAfter(t30, t28) learnAfter(t30, t9) learnAfter(t31, t24) learnAfter(t31, t29) learnAfter(t32, t14) learnAfter(t33, t12) learnAfter(t33, t30) learnAfter(t34, t16) learnAfter(t34, t17) learnAfter(t35, t1) learnAfter(t36, t35) learnAfter(t37, t37) learnAfter(t39, t11) learnAfter(t40, t39) learnAfter(t41, t40) learnAfter(t5, t4) learnAfter(t6, t4) learnAfter(t6, t5)
 
 	ACTIONS:  study(t4)
 
-	4:  knows(t1) knows(t2) knows(t3) knows(t4) knows(t5) learnAfter(t2, t1) learnAfter(t3, t1) learnAfter(t4, t2) learnAfter(t5, t3)
+	3:  knows(t1) knows(t13) knows(t2) knows(t21) knows(t3) knows(t37) knows(t4) knows(t7) knows(t9) learnAfter(t11, t1) learnAfter(t11, t2) learnAfter(t12, t9) learnAfter(t13, t11) learnAfter(t13, t12) learnAfter(t14, t4) learnAfter(t14, t5) learnAfter(t15, t11) learnAfter(t15, t13) learnAfter(t17, t17) learnAfter(t19, t1) learnAfter(t19, t11) learnAfter(t20, t18) learnAfter(t21, t19) learnAfter(t22, t18) learnAfter(t22, t19) learnAfter(t23, t19) learnAfter(t23, t21) learnAfter(t24, t22) learnAfter(t24, t23) learnAfter(t25, t24) learnAfter(t26, t20) learnAfter(t26, t23) learnAfter(t28, t18) learnAfter(t30, t28) learnAfter(t30, t9) learnAfter(t31, t24) learnAfter(t31, t29) learnAfter(t32, t14) learnAfter(t33, t12) learnAfter(t33, t30) learnAfter(t34, t16) learnAfter(t34, t17) learnAfter(t35, t1) learnAfter(t36, t35) learnAfter(t37, t37) learnAfter(t39, t11) learnAfter(t40, t39) learnAfter(t41, t40) learnAfter(t5, t4) learnAfter(t6, t4) learnAfter(t6, t5)
+
+	ACTIONS:  study(t5)
+
+	4:  knows(t1) knows(t13) knows(t2) knows(t21) knows(t3) knows(t37) knows(t4) knows(t5) knows(t7) knows(t9) learnAfter(t11, t1) learnAfter(t11, t2) learnAfter(t12, t9) learnAfter(t13, t11) learnAfter(t13, t12) learnAfter(t14, t4) learnAfter(t14, t5) learnAfter(t15, t11) learnAfter(t15, t13) learnAfter(t17, t17) learnAfter(t19, t1) learnAfter(t19, t11) learnAfter(t20, t18) learnAfter(t21, t19) learnAfter(t22, t18) learnAfter(t22, t19) learnAfter(t23, t19) learnAfter(t23, t21) learnAfter(t24, t22) learnAfter(t24, t23) learnAfter(t25, t24) learnAfter(t26, t20) learnAfter(t26, t23) learnAfter(t28, t18) learnAfter(t30, t28) learnAfter(t30, t9) learnAfter(t31, t24) learnAfter(t31, t29) learnAfter(t32, t14) learnAfter(t33, t12) learnAfter(t33, t30) learnAfter(t34, t16) learnAfter(t34, t17) learnAfter(t35, t1) learnAfter(t36, t35) learnAfter(t37, t37) learnAfter(t39, t11) learnAfter(t40, t39) learnAfter(t41, t40) learnAfter(t5, t4) learnAfter(t6, t4) learnAfter(t6, t5)
 
 SATISFIABLE
 Models       : 1+    
 Calls        : 5
-Time         : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
-CPU Time     : 0.000s
+Time         : 0.129s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.130s
