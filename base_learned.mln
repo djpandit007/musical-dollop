@@ -1,0 +1,128 @@
+//predicate declarations
+Outcome(attempt,topped_topic!)
+
+// 0.906716  Outcome(t,1)
+0.906716  Outcome(a1,1)
+
+// 0.718669  Outcome(t,2)
+0.718669  Outcome(a1,2)
+
+// -0.143743  Outcome(t,3)
+-0.143743  Outcome(a1,3)
+
+// -0.672795  Outcome(t,4)
+-0.672795  Outcome(a1,4)
+
+// 0.523494  Outcome(t,5)
+0.523494  Outcome(a1,5)
+
+// 0.228397  Outcome(t,6)
+0.228397  Outcome(a1,6)
+
+// 0.495489  Outcome(t,7)
+0.495489  Outcome(a1,7)
+
+// -1.55593  Outcome(t,8)
+-1.55593  Outcome(a1,8)
+
+// 0.240746  Outcome(t,9)
+0.240746  Outcome(a1,9)
+
+// -0.145314  Outcome(t,10)
+-0.145314  Outcome(a1,10)
+
+// -0.666048  Outcome(t,11)
+-0.666048  Outcome(a1,11)
+
+// -0.106135  Outcome(t,12)
+-0.106135  Outcome(a1,12)
+
+// -0.660034  Outcome(t,13)
+-0.660034  Outcome(a1,13)
+
+// -0.132485  Outcome(t,14)
+-0.132485  Outcome(a1,14)
+
+// -0.679747  Outcome(t,15)
+-0.679747  Outcome(a1,15)
+
+// -0.131826  Outcome(t,16)
+-0.131826  Outcome(a1,16)
+
+// 0.234915  Outcome(t,17)
+0.234915  Outcome(a1,17)
+
+// -0.117864  Outcome(t,18)
+-0.117864  Outcome(a1,18)
+
+// -0.703135  Outcome(t,19)
+-0.703135  Outcome(a1,19)
+
+// 0.519359  Outcome(t,20)
+0.519359  Outcome(a1,20)
+
+// 0.537103  Outcome(t,21)
+0.537103  Outcome(a1,21)
+
+// -1.59748  Outcome(t,22)
+-1.59748  Outcome(a1,22)
+
+// -0.120449  Outcome(t,23)
+-0.120449  Outcome(a1,23)
+
+// -0.1459  Outcome(t,24)
+-0.1459  Outcome(a1,24)
+
+// 0.726094  Outcome(t,25)
+0.726094  Outcome(a1,25)
+
+// -0.162578  Outcome(t,26)
+-0.162578  Outcome(a1,26)
+
+// 0.235437  Outcome(t,27)
+0.235437  Outcome(a1,27)
+
+// 0.271049  Outcome(t,28)
+0.271049  Outcome(a1,28)
+
+// -0.682548  Outcome(t,29)
+-0.682548  Outcome(a1,29)
+
+// 0.725047  Outcome(t,30)
+0.725047  Outcome(a1,30)
+
+// -0.125956  Outcome(t,31)
+-0.125956  Outcome(a1,31)
+
+// -0.165152  Outcome(t,32)
+-0.165152  Outcome(a1,32)
+
+// 0.221845  Outcome(t,33)
+0.221845  Outcome(a1,33)
+
+// -0.645043  Outcome(t,34)
+-0.645043  Outcome(a1,34)
+
+// -0.142795  Outcome(t,35)
+-0.142795  Outcome(a1,35)
+
+// -0.61399  Outcome(t,36)
+-0.61399  Outcome(a1,36)
+
+// 0.238104  Outcome(t,37)
+0.238104  Outcome(a1,37)
+
+// -0.140307  Outcome(t,38)
+-0.140307  Outcome(a1,38)
+
+// -0.123552  Outcome(t,39)
+-0.123552  Outcome(a1,39)
+
+// 0.215931  Outcome(t,40)
+0.215931  Outcome(a1,40)
+
+// 0.232564  Outcome(t,41)
+0.232564  Outcome(a1,41)
+
+// 0       Outcome(a1,a2!)
+0       Outcome(a1,a2)

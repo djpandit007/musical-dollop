@@ -1,0 +1,51 @@
+// base.mln
+// Idea inspired from biased Dice Problem taught in class.
+// Command to run: ./learnwts -i base.mln -o base_learned.mln -t base1_db.db -ne Outcome
+
+
+attempt = {1,...,100}
+topped_topic = {1,...,41}
+Outcome(attempt, topped_topic!)
+// Learn weight for each topped_topic
+
+Outcome(t,1)
+Outcome(t,2)
+Outcome(t,3)
+Outcome(t,4)
+Outcome(t,5)
+Outcome(t,6)
+Outcome(t,7)
+Outcome(t,8)
+Outcome(t,9)
+Outcome(t,10)
+Outcome(t,11)
+Outcome(t,12)
+Outcome(t,13)
+Outcome(t,14)
+Outcome(t,15)
+Outcome(t,16)
+Outcome(t,17)
+Outcome(t,18)
+Outcome(t,19)
+Outcome(t,20)
+Outcome(t,21)
+Outcome(t,22)
+Outcome(t,23)
+Outcome(t,24)
+Outcome(t,25)
+Outcome(t,26)
+Outcome(t,27)
+Outcome(t,28)
+Outcome(t,29)
+Outcome(t,30)
+Outcome(t,31)
+Outcome(t,32)
+Outcome(t,33)
+Outcome(t,34)
+Outcome(t,35)
+Outcome(t,36)
+Outcome(t,37)
+Outcome(t,38)
+Outcome(t,39)
+Outcome(t,40)
+Outcome(t,41)
